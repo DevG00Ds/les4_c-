@@ -9,13 +9,10 @@
 // int ReadNumber(string messageToUser)
 // {
 //     Console.WriteLine(messageToUser);
-//     int value = Convert.ToInt32(Console.ReadLine());
-//     return value;
+//     return Convert.ToInt32(Console.ReadLine());
 // }
 
-
-
-int inputData = int.Parse(Console.ReadLine());
+int inputData = Convert.ToInt32(Console.ReadLine());
 
 int count = 1;
 
@@ -24,4 +21,4 @@ for (; inputData > 10; count++)
     inputData = inputData / 10;
 
 }
-Console.WriteLine($"{count}");
+Console.WriteLine(" Ответ " + $"{count}");
